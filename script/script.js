@@ -7,7 +7,7 @@ var element
 
 function ejecuta(){
  
-    imagen=document.getElementsByTagName("img")
+    imagen=document.getElementsByTagName("figure")
      for(i=0;i<imagen.length;i++){
         imagen[0].addEventListener("click",page0,false)
         imagen[1].addEventListener("click",page1,false)

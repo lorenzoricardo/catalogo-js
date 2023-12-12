@@ -17,23 +17,22 @@
 
     <h1>Catalogo Prueba</h1>
 
+    <div class="searchBox">
+        <div class="search">
+            <img src="icons/search.png" width="20" height="20">
+        </div>
+        <div class="searchInput">
+            <input type="text" placeholder="Search Here">
+        </div>
+        <div class="close">
+            <img src="icons/cross.png" width="20" height="30">
+        </div>
+    </div>
 
-    <table>
-        <tr>
-            <td>&#9824</td>
-            <td>&#9829</td>
-        </tr>
-        <tr>
-            <td>&#9827</td>
-            <td>&#9830</td>
-        </tr>
-    </table>
-
-
-    <form name="miFormulario" id="miFormulario" method="get" autocomplete="off">
+    <!-- <form name="miFormulario" id="miFormulario" method="get" autocomplete="off">
         <input type="search" name="search">
         <input type="submit" value="Buscar">
-    </form>
+    </form> -->
 
 
     <h2>
@@ -98,17 +97,7 @@
 
     </ul>
 
-    <div class="searchBox">
-        <div class="search">
-            <img src="icons/search.png">
-        </div>
-        <div class="searchInput">
-            <input type="text" placeholder="Search Here">
-        </div>
-        <div class="close">
-            <img src="icons/cross.png">
-        </div>
-    </div>
+
 
     <script>
         let search = document.querySelector('.search')
@@ -117,9 +106,23 @@
         search.onclick = function () {
             searchBox.classList.add('active')
         }
+        close.onclick = function () {
+            searchBox.classList.remove('active')
+        }
     </script>
 
-
+    <footer>
+        <table>
+            <tr>
+                <td>&#9824</td>
+                <td>&#9829</td>
+            </tr>
+            <tr>
+                <td>&#9827</td>
+                <td>&#9830</td>
+            </tr>
+        </table>
+    </footer>
 </body>
 
 </html>

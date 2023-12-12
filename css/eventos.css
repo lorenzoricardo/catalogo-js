@@ -31,7 +31,7 @@ h1 {
   color: black;
   text-shadow: white 2px 2px 3px;
   background: linear-gradient(red, gray);
-  float: left;
+  text-align: center;
 }
 figcaption {
   font-size: medium;
@@ -41,9 +41,10 @@ figcaption {
 }
 
 table {
-  float: right;
-  color: black;
+  float: left;
+  color: white;
   height: 10px;
+  margin-top: 30px;
 }
 
 audio {
@@ -92,24 +93,26 @@ div {
 
 .searchBox {
   position: relative;
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   background: white;
   display: flex;
   justify-content: space-between;
   transition: 0.5;
   overflow: hidden;
   box-shadow: 0 25px 35px rgb(0, 0, 0, 0.1);
+  border-radius: 50px;
+  border: 2px solid;
 }
 
 .searchBox.active {
-  width: 360px;
+  width: 300px;
 }
 
 .searchBox .search {
   position: relative;
-  min-width: 45px;
-  height: 45px;
+  min-width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,8 +122,8 @@ div {
 
 .search .close {
   position: relative;
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,19 +135,21 @@ div {
 .searchBox.active .close {
   scale: 1;
   transition-delay: 0.5s;
+  border: 20px;
 }
 
 .searchBox .searchInput {
-  position: absolute;
-  left: 45px;
-  width: calc(100%-120px);
+  position: relative;
+  left: 50px;
+  width: 50px;
   height: 100%;
-  line-height: 45px;
+  line-height: 30px;
+  background: red;
 }
 
 .searchBox .searchInput input {
   position: absolute;
-  width: 100%;
+  width: 500px;
   height: 100%;
   border: none;
   outline: none;
