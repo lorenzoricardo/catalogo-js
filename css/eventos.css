@@ -1,0 +1,152 @@
+figure {
+  float: left;
+}
+figure img {
+  border-radius: 20px;
+  padding: 3px;
+  box-shadow: 3px 3px 10px white;
+  background: 5px gray;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+figure img:hover {
+  transform: scale(1.2);
+}
+body {
+  font-size: 61%;
+  text-align: center;
+  background: url("../img/background1.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin: auto auto 65px;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 50px;
+  border: 50px blue;
+  width: 25%;
+  color: black;
+  text-shadow: white 2px 2px 3px;
+  background: linear-gradient(red, gray);
+  float: left;
+}
+figcaption {
+  font-size: medium;
+  color: grey;
+
+  font-weight: bold;
+}
+
+table {
+  float: right;
+  color: black;
+  height: 10px;
+}
+
+audio {
+  float: left;
+  width: 25%;
+  border-radius: 20px;
+  height: 10%;
+}
+
+form {
+  float: right;
+}
+
+form input {
+  background: repeating-radial-gradient(red, grey);
+  border: 2px solid;
+  border-radius: 20px;
+}
+
+h2 {
+  width: 6000px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+
+h2 p {
+  float: left;
+  color: white;
+  margin-left: 17px;
+  font-size: 25px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px red;
+}
+
+h2 p:hover {
+  transform: scale(1.5);
+}
+
+ul {
+  float: left;
+  margin-top: 50px;
+}
+div {
+  background-color: white;
+}
+
+.searchBox {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5;
+  overflow: hidden;
+  box-shadow: 0 25px 35px rgb(0, 0, 0, 0.1);
+}
+
+.searchBox.active {
+  width: 360px;
+}
+
+.searchBox .search {
+  position: relative;
+  min-width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.search .close {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  scale: 0;
+  transition: 0.5s;
+}
+
+.searchBox.active .close {
+  scale: 1;
+  transition-delay: 0.5s;
+}
+
+.searchBox .searchInput {
+  position: absolute;
+  left: 45px;
+  width: calc(100%-120px);
+  height: 100%;
+  line-height: 45px;
+}
+
+.searchBox .searchInput input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.25em;
+}
